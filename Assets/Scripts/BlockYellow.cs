@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YellowBlock : MonoBehaviour
+public class YellowBlock : Block
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void DropPowerUp()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //
     }
 }

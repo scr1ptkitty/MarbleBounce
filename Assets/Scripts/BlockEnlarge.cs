@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockEnlarge : MonoBehaviour
+public class BlockEnlarge : Block
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void DropPowerUp()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Instantiate(powerup);
     }
 }

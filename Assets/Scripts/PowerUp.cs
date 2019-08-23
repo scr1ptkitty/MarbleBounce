@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Marble : MonoBehaviour
+public abstract class PowerUp : MonoBehaviour
 {
+    public Rigidbody rig;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        rig = this.gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,6 @@ public class Marble : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // if floor, destroy this
+        // if collides with floor or paddle, destroy the object
     }
 }

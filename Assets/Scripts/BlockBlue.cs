@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlueBlock : MonoBehaviour
+public class BlueBlock : Block
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void DropPowerUp()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //
     }
 }
